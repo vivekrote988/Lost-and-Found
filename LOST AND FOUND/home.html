@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html>
+    <title>L&F Web Portal</title>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <style>
+        body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+
+        body, html {
+        height: 100%;
+        line-height: 1.8;
+        }
+
+        /* Full height image header */
+        .bgimg-1 {
+        background-position: center;
+        background-size: cover;
+        background-image: url("https://moneycrashers-sparkchargemedia.netdna-ssl.com/wp-content/uploads/2018/06/dropped-lost-wallet-1068x713.jpg");
+        min-height: 100%;
+    
+        }
+
+        .w3-bar .w3-button {
+        padding: 16px;
+        
+        }
+
+        </style>
+    <body>
+
+        <!-- Navbar (sit on top) -->
+        <div class="w3-top">
+        <div class="w3-bar w3-white w3-card" id="myNavbar">
+            <img src="https://nptel.ac.in/LocalChapter/Assets/college_logo/1305_logo.jpg" alt="mit_logo" class="w3-bar-item w3-button w3-wide" style="height:15vh; width: 50vh;">
+            <!-- Right-sided navbar links -->
+            <div class="w3-right w3-hide-small">
+            <a href="#about" class="w3-bar-item w3-button w3-large"><i class="fa fa-user"></i> ABOUT</a>
+            <a href="#work" class="w3-bar-item w3-button w3-large"><i class="fa fa-th"></i> WORK</a>
+            <a href="#listing" class="w3-bar-item w3-button w3-large"><i class="fa fa-usd"></i> LOST AND FOUND LISTINGS</a>
+            <a href="#item" class="w3-bar-item w3-button w3-large"><i class="fa fa-usd"></i> Lost Items</a>
+            <a href="#contact" class="w3-bar-item w3-button w3-large"><i class="fa fa-envelope"></i> CONTACT</a>
+            </div>
+            <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+
+            <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+            <i class="fa fa-bars"></i>
+            </a>
+        </div>
+        </div>
+
+        <!-- Sidebar on small screens when clicking the menu icon -->
+        <nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
+        <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
+        <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT</a>
+        <a href="#work" onclick="w3_close()" class="w3-bar-item w3-button">WORK</a>
+        <a href="#listing" onclick="w3_close()" class="w3-bar-item w3-button">LOST AND FOUND LISTINGS</a>
+        <a href="#item" onclick="w3_close()" class="w3-bar-item w3-button w3-large"></i> Lost Items</a>
+        <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button">CONTACT</a>
+        </nav>
+
+        <!-- Header with full-height image -->
+        <header class="bgimg-1 w3-display-container w3-grayscale-min" id="home">
+        <div class="w3-display-left w3-text-white" style="padding:48px">
+            <span class="w3-jumbo w3-hide-small">LOST AND FOUND WEB PORTAL</span><br>
+            <span class="w3-xxlarge w3-hide-large w3-hide-medium">LOST AND FOUND WEB PORTAL</span><br>
+            <span class="w3-large">This is the place where you can find your lost things.</span>
+            <p><a href="#pricing" class="w3-button w3-white w3-padding-large w3-large w3-margin-top w3-opacity w3-hover-opacity-off">Lost and found Listings</a></p>
+        </div> 
+        <div class="w3-display-bottomleft w3-text-grey w3-large" style="padding:24px 48px">
+            <i class="fa fa-facebook-official w3-hover-opacity"></i>
+            <i class="fa fa-instagram w3-hover-opacity"></i>
+            <i class="fa fa-snapchat w3-hover-opacity"></i>
+            <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+            <i class="fa fa-twitter w3-hover-opacity"></i>
+            <i class="fa fa-linkedin w3-hover-opacity"></i>
+        </div>
+        </header>
+
+        <!-- Promo Section - "We know design" -->
+        <div class="w3-container w3-dark-grey" style="padding:128px 16px">
+        <div class="w3-row-padding">
+            <div class="w3-col m6">
+            <h3>How it Works</h3>
+            <p><b>When Found Any Lost Item </b></p>
+            <p>First click the picture of the lost item. Login into the Lost and Found web portal and go to the <b>Lost and found listings</b> 
+                and click on <b>FOUND </b> button then fill the form as given and Upload it.</p>
+            <p><b>When Lost Any Item </b></p>
+            <p>Login into the Lost and Found web portal and go to the <b>Lost and found listings</b> and click on <b>LOST </b>
+                button then fill the form as given (if any image is available you can upload it ) and Upload the form.</p>
+            <p><a href="#work" class="w3-button w3-black"><i class="fa fa-th"> </i> View How It Works</a></p>
+            </div>
+            <div class="w3-col m6">
+            <img class="w3-image w3-round-large" src="https://www.lostandfound.com.au/images/articles/founditem.jpg" alt="found" width="700" height="394">
+            </div>
+        </div>
+        </div>
+
+        <!-- Team Section -->
+        <div class="w3-container w3-light-grey" style="padding:128px 16px" id="about">
+        <h3 class="w3-center">THE TEAM</h3>
+        <p class="w3-center w3-large">The ones who have done this project</p>
+        <div class="w3-row-padding" style="margin-top:64px">
+
+            <div class="w3-col l3 m6 w3-margin-bottom">
+           
+            </div>        
+
+            <div class="w3-col l3 m6 w3-margin-bottom">
+            <div class="w3-card">
+                <img src="rk.jpeg" alt="RK" style="width:100%; padding-bottom: 2ex;">
+                <div class="w3-container">
+                <h3>Rutuja Kalbhor</h3>
+                <p class="w3-opacity">Team Member 1</p>
+                <p>Web Developer , HTML, CSS, Bootstrap, Django, Python,</p>
+                <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Contact</button></p>
+                </div>
+            </div>
+            </div>
+            
+            <div class="w3-col l3 m6 w3-margin-bottom">
+            <div class="w3-card">
+                <img src="vr.jpeg" alt="Vivek" style="width:100%; padding-bottom: 2ex;">
+                <div class="w3-container">
+                <h3>Vivek Rote</h3>
+                <p class="w3-opacity">Team Member 2</p>
+                <p>Front End Developer , Documenter , Presenter  </p>
+                <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Contact</button></p>
+                </div>
+            </div>
+            </div>
+            
+            <div class="w3-col l3 m6 w3-margin-bottom">
+           
+            </div>
+        </div>
+        </div>
+
+        <!-- Promo Section "Statistics" -->
+        <div class="container w3-row w3-padding-64" id="item">
+
+            <p class="w3-center" style="font-size: 3ex;">Lost Items</p>
+                <div class="card text-white bg-dark mb-3" style="max-width: 1080px;">
+                        <div class="row no-gutters">
+                            <div class="col-md-4">
+                                <img src="https://im.rediff.com/fashion/2018/mar/pe-mens-new-black-sheep-leather-wallet.jpg" class="card-img" alt="Lost_thing" width="200cm" height="200cm">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <h5 class="card-title">Card title</h5>
+                                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                    <a class="btn btn-danger" href="#" role="button">More Details</a>
+                                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            
+                    <div class="card text-white bg-dark mb-3" style="max-width: 1080px;">
+                        <div class="row no-gutters">
+                            <div class="col-md-4">
+                                <img src="https://im.rediff.com/fashion/2018/mar/pe-mens-new-black-sheep-leather-wallet.jpg" class="card-img" alt="Lost_thing" width="200cm" height="200cm">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <h5 class="card-title">Card title</h5>
+                                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                    <a class="btn btn-danger" href="#" role="button">More Details</a>
+                                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+              
+                    <div class="card text-white bg-dark mb-3" style="max-width: 1080px;">
+                        <div class="row no-gutters">
+                            <div class="col-md-4">
+                                <img src="https://im.rediff.com/fashion/2018/mar/pe-mens-new-black-sheep-leather-wallet.jpg" class="card-img" alt="Lost_thing" width="200cm" height="200cm">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <h5 class="card-title">Card title</h5>
+                                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                    <a class="btn btn-danger" href="#" role="button">More Details</a>
+                                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            <a class="w3-large" href="#">Search more</a>
+        </div>
+
+        <!-- Work Section -->
+        <div class="w3-container w3-light-grey" style="padding:128px 16px" id="work">
+        <h3 class="w3-center">OUR WORK</h3>
+        <p class="w3-center w3-large">What we've done for students</p>
+        <p class="w3-center w3-large">Things that are founded by our web portal.</p>
+
+        <div class="w3-row-padding" style="margin-top:64px">
+            <div class="w3-col l3 m6">
+            <img src="/w3images/tech_mic.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="A microphone">
+            </div>
+            <div class="w3-col l3 m6">
+            <img src="/w3images/tech_phone.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="A phone">
+            </div>
+            <div class="w3-col l3 m6">
+            <img src="/w3images/tech_drone.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="A drone">
+            </div>
+            <div class="w3-col l3 m6">
+            <img src="/w3images/tech_sound.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Soundbox">
+            </div>
+        </div>
+
+        <div class="w3-row-padding w3-section">
+            <div class="w3-col l3 m6">
+            <img src="/w3images/tech_tablet.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="A tablet">
+            </div>
+            <div class="w3-col l3 m6">
+            <img src="/w3images/tech_camera.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="A camera">
+            </div>
+            <div class="w3-col l3 m6">
+            <img src="/w3images/tech_typewriter.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="A typewriter">
+            </div>
+            <div class="w3-col l3 m6">
+            <img src="/w3images/tech_tableturner.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="A tableturner">
+            </div>
+        </div>
+        </div>
+
+        <!-- Modal for full size images on click-->
+        <div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+        <span class="w3-button w3-xxlarge w3-black w3-padding-large w3-display-topright" title="Close Modal Image">×</span>
+        <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+            <img id="img01" class="w3-image">
+            <p id="caption" class="w3-opacity w3-large"></p>
+        </div>
+        </div>
+
+        <!-- Pricing Section -->
+        <div class="w3-container w3-center w3-dark-grey" style="padding:128px 16px" id="listing">
+        <h3>Lost And Found Listings</h3>
+        <p class="w3-large">Choose any one of them.</p>
+        <div class="w3-row-padding" style="margin-top:64px">
+            <div class="w3-third w3-section">
+            <ul class="w3-ul w3-white w3-hover-shadow">
+                <li class="w3-black w3-xlarge w3-padding-32">LOST ITEM</li>
+                <li class="w3-padding-16">If  Lost  any  of </li>
+                <li class="w3-padding-16">your  item</li>
+                <li class="w3-padding-16">please  click  below</li>
+                </li>
+                <li class="w3-light-grey w3-padding-24">
+                <button onclick="window.location.href = 'details.html';" class="w3-button w3-red w3-padding-large">  LOST  </button>
+                </li>
+            </ul>
+            </div>
+            <div class="w3-third w3-section">
+            <ul class="w3-ul w3-white w3-hover-shadow">
+                <li class="w3-red w3-xlarge w3-padding-48" style="padding-top: 50em;"> <-- Choose One ---> </li>
+                
+            </ul>
+            </div>
+            <div class="w3-third w3-section">
+            <ul class="w3-ul w3-white w3-hover-shadow">
+                <li class="w3-black w3-xlarge w3-padding-32">FOUND ITEM</li>
+                <li class="w3-padding-16">If  found  any  of </li>
+                <li class="w3-padding-16">the  lost  item</li>
+                <li class="w3-padding-16">please  click  below</li>
+                </li>
+                <li class="w3-light-grey w3-padding-24">
+                <button onclick="window.location.href = 'details.html';" class="w3-button w3-red w3-padding-large">  FOUND  </button>
+                </li>
+            </ul>
+            </div>
+        </div>
+        </div>
+
+        <!-- Contact Section -->
+        <div class="w3-container w3-light-grey" style="padding:128px 16px" id="contact">
+        <h3 class="w3-center">CONTACT</h3>
+        <p class="w3-center w3-large">Lets get in touch. Send us a message:</p>
+        <div style="margin-top:48px">
+            <p><i class="fa fa-map-marker fa-fw w3-xxlarge w3-margin-right"></i> MIT SOE, PUNE</p>
+            <p><i class="fa fa-phone fa-fw w3-xxlarge w3-margin-right"></i> Phone: +91 977 777 7777</p>
+            <p><i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"> </i> Email: lostandfound@mituniversity.edu.in</p>
+            <br>
+            <form action="/action_page.php" target="_blank">
+            <p><input class="w3-input w3-border" type="text" placeholder="Name" required name="Name"></p>
+            <p><input class="w3-input w3-border" type="text" placeholder="Email" required name="Email"></p>
+            <p><input class="w3-input w3-border" type="text" placeholder="Subject" required name="Subject"></p>
+            <p><input class="w3-input w3-border" type="text" placeholder="Message" required name="Message"></p>
+            <p>
+                <button class="w3-button w3-black" type="submit">
+                <i class="fa fa-paper-plane"></i> SEND MESSAGE
+                </button>
+            </p>
+            </form>
+            <!-- Image of location/map -->
+            <img src="http://www.mituniversity.edu.in/assets/upload/files/mitsoe.jpg" class="w3-image" style="width:50%;margin-top:40px">
+        </div>
+        </div>
+
+        <!-- Footer -->
+        <footer class="w3-center w3-black w3-padding-64">
+        <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+        <div class="w3-xlarge w3-section">
+            <i class="fa fa-facebook-official w3-hover-opacity"></i>
+            <i class="fa fa-instagram w3-hover-opacity"></i>
+            <i class="fa fa-snapchat w3-hover-opacity"></i>
+            <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+            <i class="fa fa-twitter w3-hover-opacity"></i>
+            <i class="fa fa-linkedin w3-hover-opacity"></i>
+        </div>
+        <p>Powered by <a href="#" title="W3.CSS" target="_blank" class="w3-hover-text-green">RK Enterprises</a></p>
+        </footer>
+        
+        <script>
+        // Modal Image Gallery
+        function onClick(element) {
+        document.getElementById("img01").src = element.src;
+        document.getElementById("modal01").style.display = "block";
+        var captionText = document.getElementById("caption");
+        captionText.innerHTML = element.alt;
+        }
+
+
+        // Toggle between showing and hiding the sidebar when clicking the menu icon
+        var mySidebar = document.getElementById("mySidebar");
+
+        function w3_open() {
+        if (mySidebar.style.display === 'block') {
+            mySidebar.style.display = 'none';
+        } else {
+            mySidebar.style.display = 'block';
+        }
+        }
+
+        // Close the sidebar with the close button
+        function w3_close() {
+            mySidebar.style.display = "none";
+        }
+        </script>
+
+    </body>
+</html>
